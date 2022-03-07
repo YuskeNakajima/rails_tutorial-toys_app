@@ -3,7 +3,8 @@ version: '3'
 services:
   web:
     build: .
-    command: rails s -b 0.0.0.0
+#    command: rails s -b 0.0.0.0
+    command: tail -f /dev/null
     ports:
       - 3000:3000
     volumes:
