@@ -1,17 +1,18 @@
-<p id="notice"><%= notice %></p>
+<div class="scaffold-custom-wrap">
+  <p id="notice"><%= notice %></p>
 
 <h1>Users</h1>
 
-<table>
-  <thead>
+  <table>
+    <thead>
     <tr>
-      <th>Name</th>
-      <th>Email</th>
+      <th class="font-weight:700">Name</th>
+      <th class="font-weight:700">Email</th>
       <th colspan="3"></th>
     </tr>
-  </thead>
+    </thead>
 
-  <tbody>
+    <tbody>
     <% @users.each do |user| %>
       <tr>
         <td><%= user.name %></td>
@@ -21,9 +22,10 @@
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
 
-<br>
+  <br>
 
-<%= link_to 'New User', new_user_path %>
+  <%= link_to 'New User', new_user_path %>
+</div>
