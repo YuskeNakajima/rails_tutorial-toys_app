@@ -1,3 +1,7 @@
 class Micropost < ApplicationRecord
-  validates :content, length: {maximum: 140}
+  # 関係
+  belongs_to :user
+
+  # バリデーション
+  validates :content, length: {maximum: 140}, presence: true
 end
