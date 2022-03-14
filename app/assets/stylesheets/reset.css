@@ -33,5 +33,6 @@ table {
 
 /* Safariのtextarea要素のwhite-spaceプロパティを元に戻します */
 textarea {
+    resize: vertical;
     white-space: revert;
 }
