@@ -225,6 +225,35 @@
   #notice {
     color: var(--color-120-light);
   }
+
+  // エラー
+  .field_with_errors {
+    background-color: var(--color-000-light);
+  }
+
+  #error_explanation {
+    border: 0.2rem solid var(--color-000-light);
+    background-color: var(--color-white-3);
+
+    h2 {
+      text-align: left;
+      font-weight: bold;
+      padding: 0.2rem;
+      font-size: 1.2rem;
+      background-color: var(--color-000-light);
+      color: var(--color-white-1);
+    }
+
+    ul {
+      padding-left: 1rem;
+      padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
+      li {
+        font-size: 0.8rem;
+        list-style: square;
+      }
+    }
+  }
 }
 
 // キーフレーム アニメーション
